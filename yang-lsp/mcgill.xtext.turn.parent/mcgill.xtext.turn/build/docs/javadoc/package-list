@@ -1,0 +1,17 @@
+mcgill.xtext.turn
+mcgill.xtext.turn.generator
+mcgill.xtext.turn.scoping
+mcgill.xtext.turn.settings
+mcgill.xtext.turn.utils
+mcgill.xtext.turn.validation
+org.xtext.example.mydsl
+org.xtext.example.mydsl.generator
+org.xtext.example.mydsl.parser.antlr
+org.xtext.example.mydsl.parser.antlr.internal
+org.xtext.example.mydsl.scoping
+org.xtext.example.mydsl.serializer
+org.xtext.example.mydsl.services
+org.xtext.example.mydsl.tURN
+org.xtext.example.mydsl.tURN.impl
+org.xtext.example.mydsl.tURN.util
+org.xtext.example.mydsl.validation

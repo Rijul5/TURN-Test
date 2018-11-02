@@ -1,0 +1,39 @@
+0 silly input [ 'prepare' ]
+1 silly flags { _: [ 'run' ],
+1 silly flags   'reject-cycles': false,
+1 silly flags   rejectCycles: false,
+1 silly flags   script: 'prepare',
+1 silly flags   args: [] }
+2 verbose rootPath /home/rijul/yangster
+3 info version 2.11.0
+4 silly existsSync /home/rijul/yangster/VERSION
+5 info versioning independent
+6 silly initialize attempt
+7 silly initialize success
+8 silly execute attempt
+9 silly runScriptInPackageStreaming [ 'prepare', [], 'sprotty' ]
+10 silly getExecOpts { cwd: '/home/rijul/yangster/sprotty/client' }
+11 silly runScriptInPackageStreaming [ 'prepare', [], 'theia-sprotty' ]
+12 silly getExecOpts { cwd: '/home/rijul/yangster/theia-sprotty' }
+13 silly runScriptInPackageStreaming [ 'prepare', [], 'yang-sprotty' ]
+14 silly getExecOpts { cwd: '/home/rijul/yangster/yang-sprotty' }
+15 silly runScriptInPackageStreaming [ 'prepare', [], 'theia-yang-extension' ]
+16 silly getExecOpts { cwd: '/home/rijul/yangster/theia-yang-extension' }
+17 error execute callback with error
+18 error Error: Command failed: yarn run prepare
+18 error cp: cannot stat '../../yang-lsp/mcgill.xtext.turn.parent/mcgill.xtext.turn.diagram/build/install/turn-language-server': No such file or directory
+18 error error Command failed with exit code 1.
+18 error error Command failed with exit code 1.
+18 error error Command failed with exit code 1.
+18 error
+18 error yarn run v1.6.0
+18 error $ yarn run clean && yarn install:languageserver && yarn run build
+18 error $ rimraf lib
+18 error $ rimraf -rf ./build && mkdir build && yarn download:languageserver
+18 error $ rm -rf ./build && mkdir build && cp -r ../../yang-lsp/mcgill.xtext.turn.parent/mcgill.xtext.turn.diagram/build/install/turn-language-server ./build
+18 error info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
+18 error info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
+18 error info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
+18 error
+18 error     at Promise.all.then.arr (/home/rijul/yangster/node_modules/execa/index.js:236:11)
+18 error     at <anonymous>

@@ -1,0 +1,43 @@
+urnModel Example 
+
+actor A#"Teacher" {
+	importance 100
+	softgoal Motivation#"Increaase Motivation" {
+        contributesTo Productivity correlated with make
+        dependsOn B.Guide
+	}
+    softgoal Productivity#"Increase Productivity" {
+       dependsOn Task
+	}
+    task Task#"Task"{   
+     contributesTo Motivation correlated with 90
+     dependsOn C.Respect
+    }
+}
+
+actor B#"Student"{  
+    softgoal Guide#"Guide"
+    { }
+}
+
+actor C#"Parent"{
+    goal Respect#"Respect"{}
+}
+
+actor D#"GrandParents"{
+    goal Memory#"Memory"{}
+}
+
+strategy abc#"ABC"{
+    A.Motivation exceeding evaluation conflict
+   
+}
+
+// strategy def#"ABCddf"{
+   
+//     A.Productivity exceeding evaluation conflict
+// }
+
+// actor D#"Friend"{
+//     goal Hello#"Hello"{}
+// }

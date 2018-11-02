@@ -1,0 +1,33 @@
+urnModel Example
+
+actor Student#"Student A"{
+    goal Practice#"Decrease Utilization"{
+        contributesTo Solution with make
+    }
+
+    goal Solution#"Inccrease Cost"{
+    }
+}
+
+actor SubStudent#"Student B"{
+    goal Energy#"Increase Efficiency"{
+        contributesTo Effort with make
+    }
+    
+    goal Time#"Reduce Time"{       
+    }
+    
+    goal Effort#"Reduce Effort"{
+        contributesTo Time with make
+    }
+}
+
+map Test {
+   start s#"Begining" -> X r1 -> end e#"end".
+}
+
+
+
+ 
+
+ 

@@ -1,0 +1,7 @@
+{
+    // Enable/Disable the line numbers in the monaco editor
+	"editor.lineNumbers": "off",
+    // Tab width in the editor
+	"editor.tabSize": 4,
+	"files.watcherExclude": "path/to/file"
+}
